@@ -1,0 +1,20 @@
+Author: Alex Almanza
+Professor Jeff Shafer
+ECPE 170: Computer Systems and Networks
+15 February 2021
+
+Lab 4: C Programming Project
+SUDOKU PROJECT
+Any .txt file can be passed into the program. The format of the text file should be
+as follows:
+	- 9x9 grid of numbers
+	- empty spaces are marked with a 0
+	- no spaces between numbers
+Included are three sample .txt files, for convenience: test1, test2, & test3
+
+***As a note, when running the command ./sudoku human_input.txt, a segfault will occur.
+This is just because my quit program logic is just the innate Ctrl+C, so the ^C command
+is being executed too early when the commands are redirected to the textfile. The seg
+fault will not occur in a normal human-input game.
+
+Enjoy

@@ -1,0 +1,123 @@
+==12897== Memcheck, a memory error detector
+==12897== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==12897== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==12897== Command: ./amplify IMAGES/Lenna_org_1024.pgm 11 1.1 2
+==12897== Parent PID: 4689
+==12897== 
+==12897== Invalid read of size 4
+==12897==    at 0x10C19D: vertical_edge_keeping(float*, float*, float*, int, int, int, float*, float*) (amplify.h:355)
+==12897==    by 0x10DC55: main (main.c:120)
+==12897==  Address 0xa1a8040 is 0 bytes after a block of size 4,194,304 alloc'd
+==12897==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12897==    by 0x10D9A1: main (main.c:77)
+==12897== 
+==12897== Invalid read of size 4
+==12897==    at 0x10C1FD: vertical_edge_keeping(float*, float*, float*, int, int, int, float*, float*) (amplify.h:358)
+==12897==    by 0x10DC55: main (main.c:120)
+==12897==  Address 0xa1a8040 is 0 bytes after a block of size 4,194,304 alloc'd
+==12897==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12897==    by 0x10D9A1: main (main.c:77)
+==12897== 
+==12897== Invalid read of size 4
+==12897==    at 0x10ADDE: horizontal_edge_keeping(float*, float*, float*, int, int, int, float*, float*) (amplify.h:178)
+==12897==    by 0x10DCAC: main (main.c:123)
+==12897==  Address 0xa1a8040 is 0 bytes after a block of size 4,194,304 alloc'd
+==12897==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12897==    by 0x10D9A1: main (main.c:77)
+==12897== 
+==12897== Conditional jump or move depends on uninitialised value(s)
+==12897==    at 0x10DF3A: main (main.c:138)
+==12897== 
+==12897== Conditional jump or move depends on uninitialised value(s)
+==12897==    at 0x10DF43: main (main.c:138)
+==12897== 
+==12897== Conditional jump or move depends on uninitialised value(s)
+==12897==    at 0x10DF7F: main (main.c:138)
+==12897== 
+==12897== Conditional jump or move depends on uninitialised value(s)
+==12897==    at 0x10DF88: main (main.c:138)
+==12897== 
+==12897== Conditional jump or move depends on uninitialised value(s)
+==12897==    at 0x10E033: main (main.c:144)
+==12897== 
+==12897== Conditional jump or move depends on uninitialised value(s)
+==12897==    at 0x10E03C: main (main.c:144)
+==12897== 
+==12897== Conditional jump or move depends on uninitialised value(s)
+==12897==    at 0x10E0BD: main (main.c:145)
+==12897== 
+==12897== Conditional jump or move depends on uninitialised value(s)
+==12897==    at 0x10E0C6: main (main.c:145)
+==12897== 
+==12897== Conditional jump or move depends on uninitialised value(s)
+==12897==    at 0x10E102: main (main.c:145)
+==12897== 
+==12897== Conditional jump or move depends on uninitialised value(s)
+==12897==    at 0x10E10F: main (main.c:145)
+==12897== 
+==12897== 
+==12897== More than 10000000 total errors detected.  I'm not reporting any more.
+==12897== Final error counts will be inaccurate.  Go fix your program!
+==12897== Rerun with --error-limit=no to disable this cutoff.  Note
+==12897== that errors may occur in your program without prior warning from
+==12897== Valgrind, because errors are no longer being displayed.
+==12897== 
+==12897== 
+==12897== HEAP SUMMARY:
+==12897==     in use at exit: 50,332,668 bytes in 10 blocks
+==12897==   total heap usage: 89 allocs, 79 frees, 118,633,132 bytes allocated
+==12897== 
+==12897== 16 bytes in 1 blocks are definitely lost in loss record 1 of 10
+==12897==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12897==    by 0x10A36A: mean_keeping(float*, float*, int, int, int, float*, float*, float*) (amplify.h:34)
+==12897==    by 0x10E2A8: main (main.c:158)
+==12897== 
+==12897== 36 bytes in 1 blocks are definitely lost in loss record 2 of 10
+==12897==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12897==    by 0x10A34B: mean_keeping(float*, float*, int, int, int, float*, float*, float*) (amplify.h:32)
+==12897==    by 0x10E2A8: main (main.c:158)
+==12897== 
+==12897== 484 bytes in 1 blocks are definitely lost in loss record 3 of 10
+==12897==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12897==    by 0x10D7EB: main (main.c:60)
+==12897== 
+==12897== 484 bytes in 1 blocks are definitely lost in loss record 4 of 10
+==12897==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12897==    by 0x10D809: main (main.c:61)
+==12897== 
+==12897== 4,194,304 bytes in 1 blocks are possibly lost in loss record 5 of 10
+==12897==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12897==    by 0x10EF9A: void read_image_template<float>(char*, float**, int*, int*) (image_template.h:38)
+==12897==    by 0x10D758: main (main.c:48)
+==12897== 
+==12897== 4,194,304 bytes in 1 blocks are definitely lost in loss record 6 of 10
+==12897==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12897==    by 0x10D9C5: main (main.c:79)
+==12897== 
+==12897== 4,194,304 bytes in 1 blocks are definitely lost in loss record 7 of 10
+==12897==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12897==    by 0x10D9E9: main (main.c:80)
+==12897== 
+==12897== 4,194,304 bytes in 1 blocks are definitely lost in loss record 8 of 10
+==12897==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12897==    by 0x109969: double_thresh(float*, float*, int, int) (main.h:127)
+==12897==    by 0x10DBCF: main (main.c:109)
+==12897== 
+==12897== 16,777,216 bytes in 1 blocks are possibly lost in loss record 9 of 10
+==12897==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12897==    by 0x10D949: main (main.c:74)
+==12897== 
+==12897== 16,777,216 bytes in 1 blocks are possibly lost in loss record 10 of 10
+==12897==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12897==    by 0x10D97D: main (main.c:75)
+==12897== 
+==12897== LEAK SUMMARY:
+==12897==    definitely lost: 12,583,932 bytes in 7 blocks
+==12897==    indirectly lost: 0 bytes in 0 blocks
+==12897==      possibly lost: 37,748,736 bytes in 3 blocks
+==12897==    still reachable: 0 bytes in 0 blocks
+==12897==         suppressed: 0 bytes in 0 blocks
+==12897== 
+==12897== Use --track-origins=yes to see where uninitialised values come from
+==12897== For lists of detected and suppressed errors, rerun with: -s
+==12897== ERROR SUMMARY: 10000010 errors from 23 contexts (suppressed: 0 from 0)

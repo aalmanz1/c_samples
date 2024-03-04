@@ -1,0 +1,12 @@
+Configuration: Algorithm 1, array size 256
+Total size of all 3 arrays: 1.5 MB
+Result for sanity checking: c[255][255]=62.498
+Floating-point ops/sec: 9.63E+08
+Configuration: Algorithm 1, array size 512
+Total size of all 3 arrays: 6 MB
+Result for sanity checking: c[511][511]=133.201
+Floating-point ops/sec: 2.91E+08
+Configuration: Algorithm 1, array size 768
+Total size of all 3 arrays: 14 MB
+Result for sanity checking: c[767][767]=195.151
+Floating-point ops/sec: 7.88E+08
